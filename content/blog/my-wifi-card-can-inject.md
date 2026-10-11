@@ -10,13 +10,13 @@ math: false
 toc: true
 ---
 
-As it can often be, I was poking at my laptop instead of doing anything useful. The question was simple: can my WiFi do monitor mode and packet injection? I was pretty sure it could. Famous last words.
+As it can often be, I was poking at my PC instead of doing anything useful. The question was simple: can my WiFi do monitor mode and packet injection? I was pretty sure it could. Famous last words.
 
 What followed was an afternoon of me very confidently declaring my hardware broken, reading kernel source to prove it, and then discovering the real culprit was a one-line regulatory setting I'd nuked myself. So, a normal afternoon.
 
 This is the whole thing, mistakes included.
 
-> **Scope:** this is my own laptop, my own WiFi card, and my own home network. `aireplay-ng --test` only talks to access points I own. Don't point any of this at networks that aren't yours.
+> **Scope:** this is my own PC, my own WiFi card, and my own home network. `aireplay-ng --test` only talks to access points I own. Don't point any of this at networks that aren't yours.
 
 ## The card
 
