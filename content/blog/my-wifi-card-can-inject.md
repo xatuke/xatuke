@@ -262,7 +262,35 @@ sudo sh -c '
 sudo aireplay-ng --test mon0
 ```
 
+And the test, on channel 44, against my own 5 GHz network:
+
+```
+READY
+09:03:51  Trying broadcast probe requests...
+09:03:51  Injection is working!
+09:03:52  Found 2 APs
+
+09:03:52  Trying directed probe requests...
+09:03:52  32:CC:21:D3:50:24 - channel: 44 - 'Airtel_..._5GHz'
+09:03:52  Ping (min/avg/max): 0.124ms/2.460ms/12.164ms Power: -27.47
+09:03:52   30/30: 100%
+
+09:03:52  30:CC:21:E3:50:24 - channel: 44 - 'Airtel_...'
+09:03:52  Ping (min/avg/max): 0.125ms/2.150ms/9.914ms Power: -27.20
+09:03:52   30/30: 100%
+```
+
+`30/30: 100%` on both — every injected probe got a reply. For contrast, 2.4 GHz (which was never NO_IR even under world-`00`) looked the same from the start:
+
+```
+Injection is working!
+30:15:77:88:CA:A2 - channel: 11 - 'Some_neighbour_AP'
+ 30/30: 100%
+```
+
 ### Put everything back to normal
+
+Monitor mode and your everyday connection are mutually exclusive, so when you're done, delete the monitor interface, bring the station back, and restart the managers:
 
 ```bash
 sudo sh -c '
@@ -272,6 +300,18 @@ sudo sh -c '
   echo 0 > /sys/module/rtw89_core/parameters/debug_mask
   echo RESTORED
 '
+```
+
+```
+RESTORED
+```
+
+Then confirm you're actually back in a normal managed state — you want `iw dev` to show only `wlp16s0` as `type managed` (no `mon0`), `iw reg get` to still say `country IN` (leave it — that's the fix), and `nmcli device` to report `wlp16s0` as `connected`:
+
+```bash
+iw dev | grep -E 'Interface|type'
+iw reg get | grep country
+nmcli -t -f DEVICE,STATE device | grep wlp16s0
 ```
 
 ## The lesson, such as it is
