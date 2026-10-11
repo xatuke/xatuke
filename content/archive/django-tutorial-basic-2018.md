@@ -1,4 +1,5 @@
 ---
+aliases: ["/blog/django-tutorial-basic-2018/"]
 title: "Django: rapid development and clean, pragmatic design"
 date: 2018-11-13T22:37:34Z
 slug: ""

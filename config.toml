@@ -66,3 +66,9 @@ copyright = "© Aayushman Choudhary {year}"
   title = "Blog"
   url = "/blog"
 
+[[menu.main]]
+  identifier = "archive"
+  name = "archive"
+  title = "Archive"
+  url = "/archive"
+

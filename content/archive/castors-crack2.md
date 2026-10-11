@@ -1,4 +1,5 @@
 ---
+aliases: ["/blog/castors-crack2/"]
 title: "CastorsCTF | Password Crack 2"
 date: 2020-06-01T02:37:23+05:30
 slug: ""

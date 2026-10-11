@@ -1,4 +1,5 @@
 ---
+aliases: ["/blog/mongodb-the-nosql-db-2018/"]
 title: "MongoDB: The NoSQL Database"
 date: 2018-11-16T22:28:42Z
 slug: ""

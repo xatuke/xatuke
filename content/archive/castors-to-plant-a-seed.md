@@ -1,4 +1,5 @@
 ---
+aliases: ["/blog/castors-to-plant-a-seed/"]
 title: "CastorsCTF | To Plant a Seed"
 date: 2020-06-01T02:37:47+05:30
 slug: ""

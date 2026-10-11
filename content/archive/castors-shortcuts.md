@@ -1,4 +1,5 @@
 ---
+aliases: ["/blog/castors-shortcuts/"]
 title: "CastorsCTF | Shortcuts"
 date: 2020-06-01T02:37:34+05:30
 slug: ""

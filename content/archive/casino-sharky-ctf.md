@@ -1,4 +1,5 @@
 ---
+aliases: ["/blog/casino-sharky-ctf/"]
 title: "Sharky CTF | Casino"
 date: 2020-04-11T22:09:20Z
 slug: ""

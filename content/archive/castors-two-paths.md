@@ -1,4 +1,5 @@
 ---
+aliases: ["/blog/castors-two-paths/"]
 title: "CastorsCTF | Two Paths"
 date: 2020-06-01T02:37:56+05:30
 slug: ""

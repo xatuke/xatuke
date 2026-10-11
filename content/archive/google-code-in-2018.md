@@ -1,4 +1,5 @@
 ---
+aliases: ["/blog/google-code-in-2018/"]
 title: "Hey, it's me! crowded_geek"
 date: 2018-12-16T22:18:20Z
 slug: ""
